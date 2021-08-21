@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+.phone-mockup {
+    width: 238px;
+    height: 487px;
+    background-color: hsl(270, 20%, 96%);
+    position: absolute;
+    top: 50%;
+    left: 30.2%;
+    margin-left: -119px;
+    margin-top: -243.5px;
+    border: #fff 10px solid;
+    border-radius: 30px;
+    box-shadow: lightgray 3px 3px 15px;
+    z-index: 2;
+}
+.phone-mockup::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 0px 0px 15px 15px;
+    z-index: 2;
+}
+.top-bar {
+    background: linear-gradient(-90deg, #e942ff, #8838ff);
+    border-radius: 20px 20px 10px 10px;    
+    padding-top: 20px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-shadow: lightgray 0px 2px 5px;
+    z-index: 0;
+}
+.back-profile {
+    display: flex;
+    align-items: center;
+    height: auto;  
+}
+.fa-chevron-left {
+    color: #fff;
+    margin: 0 10px 0 10px;
+    height: 15px;
+}
+.profile-pic {
+    width: 25px;
+    border: #fff solid 2px;
+    border-radius: 50px;
+}
+
+.name-available {
+    margin-top: -10px;
+    margin-left: 10px;
+    height: auto;
+}
+.name-available h2 {
+    font-size: .7rem;
+    margin-bottom: 0px;
+    color: #fff;
+}
+.name-available p {
+    margin: 0;
+    font-size: .55rem;
+    color: hsl(276, 100%, 81%);
+}
+
+.three-dots {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    position: absolute;
+    right: 5px; 
+}
+.three-dots img {
+    height: 10px; 
+    
+}
+
+
+ /* CHAT PART */
+
+.chat {
+    padding: 0px 10px 10px 10px;
+}
+.chat p {
+    font-size: .5rem;
+    margin: 5px;
+}
+
+.text-container-seller {
+    background-color: #EDE4F5;
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px 10px 10px 3px;
+    padding: 1px 5px;
+    margin: 10px 10px 10px 0px;
+    color: hsl(276, 55%, 52%);
+}
+.client-sent-images {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -5px 10px 10px;
+}
+.client-sent-images img {
+    width: 45px;
+    margin: 0 5px;
+    border-radius: 13px;
+}
+
+.client-answ-1 {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+.text-container-client {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    border-radius: 10px 10px 3px 10px;
+    padding: 1px 5px;
+    margin: 10px 0px 0px 0px;
+    color: hsl(271, 15%, 43%);
+    box-shadow: rgb(221, 221, 221) 2px 3px 10px;
+}
+.selection-container-seller {
+    background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 30px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 3px;
+}
+.selection-container-seller p {
+    color: hsl(276, 88%, 87%);
+    font-weight: 500;
+    margin-right: 15px;
+}
+.selection-container-seller h3 {
+    color: #fff;
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+.send-mssg-input {
+    width: 90%;
+    background-color:#fff;
+    border-radius: 20px;
+    margin: -5px 10px 0 10px;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.send-mssg-input p {
+    margin-left: 10px;
+    color:  hsl(276, 88%, 87%);
+}
+.send-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(271, 36%, 24%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+.send-button img {
+    width: 6px;
+}
+
+/* INFO */
+
+.info {
+    position: absolute;
+    width: 30vw;
+    height: 200px;
+    right: 25%;
+    top: 50%;
+    margin-top: -100px;
+}
+.info h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 2.5rem;
+}
+.info p {
+    color: hsl(270, 7%, 64%);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 414px) and (orientation: portrait) {
+    body {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 50px;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone-mockup {
+        position: initial;
+        margin: 0;
+        margin-top: 100px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        position: initial;
+        width: auto;
+        padding: 25px;
+        padding-bottom: 80px;
+    }
+    .info h1 {
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+    .info p {
+        text-align: center;
+        font-size: .9rem;
+        width: 75vw;
+    }
+}
